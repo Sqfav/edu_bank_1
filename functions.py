@@ -48,8 +48,8 @@ def passhash(password):
 # Для проверки, что строки для приведения к int
 # содержат только цифры и также будут неотрицательны
 def numbers_only(sample):
-    # while not sample.isnumeric():
-    #     sample = input('Для ввода допустимы только цифры. Пожалуйста, повторите ввод: ')
+    while not sample.isnumeric():
+        sample = input('Для ввода допустимы только цифры. Пожалуйста, повторите ввод: ')
     return int(sample)
 
 
